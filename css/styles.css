@@ -10,15 +10,13 @@ body {
   /*background-color: #e7e6d4;*/
 }
 
-h1 {
-
-}
 
 /*---------------------Nav-Bar---------------------*/
 .nav a {
   text-decoration: none;
   color: #77554c;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .navbar {
@@ -42,7 +40,7 @@ h1 {
   list-style: none;
   margin: 0 20px;
   display: inline-block;
-  zoom: 2;
+  zoom: 1.5;
 }
 
 #navLeft {
@@ -68,6 +66,11 @@ h1 {
   padding: 20px 30px;
 }
 
+.section > h1:first-child {
+  margin-top: 85px;
+  text-align: center;
+  zoom: 2;
+}
 
 /*---------------------Home---------------------*/
 #home {
@@ -81,13 +84,13 @@ h1 {
   margin: 0px;
   padding: 0px;
   border: none;
-  /*z-index: -999999;*/
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 #homeWrapper img {
+  height: 920px;
 }
 
 /*---------------------About Us---------------------*/
@@ -95,12 +98,6 @@ h1 {
   background: #e7e6d4;
   width: 100%;
   margin: auto;
-}
-
-#aboutUs > h1:first-child {
-  margin-top: 80px;
-  text-align: center;
-  zoom: 2;
 }
 
 #aboutUs p {
@@ -117,6 +114,7 @@ h1 {
 
 #aboutUs p strong {
   color: #567d50;
+  text-shadow: -.3px 0 #e7e6d4, 0 .3px #e7e6d4, .3px 0 #e7e6d4, 0 -.3px #e7e6d4;
 }
 
 #profilePics {
@@ -146,6 +144,41 @@ h1 {
   content: "";
   display: block;
   clear: both;
+}
+
+/*---------------------Book Now---------------------*/
+#book {
+  background-color: #567d50;
+  position: relative;
+}
+
+#book h1 {
+  position: relative;
+}
+
+form {
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  text-align: center;
+}
+
+input {
+  -webkit-appearance: none;
+  width: 750px;
+}
+
+button {
+  -webkit-appearance: none;
+  text-align: center;
+  width: 450px;
+}
+
+/*---------------------Nature Facts---------------------*/
+#facts {
+
 }
 
 
