@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +7,18 @@
 }
 
 body {
-  background-color: #e7e6d4;
+  /*background-color: #e7e6d4;*/
 }
 
+h1 {
+
+}
+
+/*---------------------Nav-Bar---------------------*/
 .nav a {
   text-decoration: none;
   color: #77554c;
+  text-transform: uppercase;
 }
 
 .navbar {
@@ -23,6 +30,7 @@ body {
   top: 0;
   left: 0;
   border-bottom: 5px solid #567d50;
+  z-index: 10;
 }
 
 .navbar .wrapper {
@@ -49,26 +57,104 @@ body {
   right: 0;
 }
 
-#bodyWrapper {
-  z-index: -10;
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+
+/*---------------------Content Classes---------------------*/
+.section {
+  padding: 20px 30px;
+}
+
+
+/*---------------------Home---------------------*/
+#home {
+  margin: 0 0 20px 0;
+  position: relative;
+  height: 1000px;
+}
+
+#homeWrapper {
   position: absolute;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  /*z-index: -999999;*/
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
-  width: 900px;
 }
 
-#bodyWrapper img {
+#homeWrapper img {
 }
 
-.logo {
-  /*text-indent: -999px;*/
-  width: 200px;
-  height: 200px;
-  /*background: url(images/logo.png);*/
-  /*margin: 0 0 0 -62px;*/
-  /*position: absolute;
-  top: 15px;
-  left: 50%;*/
-  /*overflow: hidden;*/
+/*---------------------About Us---------------------*/
+#aboutUs {
+  background: #e7e6d4;
+  width: 100%;
+  margin: auto;
+}
+
+#aboutUs > h1:first-child {
+  margin-top: 80px;
+  text-align: center;
+  zoom: 2;
+}
+
+#aboutUs p {
+  border: 5px solid #567d50;
+  width: 60%;
+  /*left: 430px;*/
+  float: right;
+  padding: 20px;
+  color: #e7e6d4;
+  background-color: #77554c;
+  zoom: 2;
+  border-radius: 20px;
+}
+
+#aboutUs p strong {
+  color: #567d50;
+}
+
+#profilePics {
+  width: 420px;
+  height: 1000px;
+  float: left;
+}
+
+#profilePics  ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#profilePics li {
+}
+
+#profilePics li > img {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  border: 5px solid #567d50;
+}
+
+#aboutUs:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/*---------------------Gallery---------------------*/
+#gallery {
+
+}
+
+/*---------------------Contact---------------------*/
+#contact {
+
 }
