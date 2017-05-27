@@ -83,7 +83,9 @@ body {
 
 /*---------------------Home---------------------*/
 #home {
-  height: 1000px;
+  width: 915px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #homeWrapper {
@@ -103,6 +105,7 @@ body {
 /*---------------------About Us---------------------*/
 #aboutUs {
   background: #e7e6d4;
+  color: #77554c;
   width: 100%;
 }
 
@@ -212,7 +215,7 @@ button {
 }
 
 #galleryPics {
-  width: 1100px;
+  width: 950px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
