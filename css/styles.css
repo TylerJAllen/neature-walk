@@ -7,7 +7,7 @@
 }
 
 body {
-  /*background-color: #e7e6d4;*/
+  background-color: #e7e6d4;
 }
 
 
@@ -64,6 +64,9 @@ body {
 /*---------------------Content Classes---------------------*/
 .section {
   padding: 20px 30px;
+  height: 1100px;
+  width: 100%;
+  position: relative;
 }
 
 .section > h1:first-child {
@@ -72,10 +75,14 @@ body {
   zoom: 2;
 }
 
+.section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /*---------------------Home---------------------*/
 #home {
-  margin: 0 0 20px 0;
-  position: relative;
   height: 1000px;
 }
 
@@ -97,7 +104,6 @@ body {
 #aboutUs {
   background: #e7e6d4;
   width: 100%;
-  margin: auto;
 }
 
 #aboutUs p {
@@ -140,20 +146,22 @@ body {
   border: 5px solid #567d50;
 }
 
-#aboutUs:after {
+/*#aboutUs:after {
   content: "";
   display: block;
   clear: both;
-}
+}*/
 
 /*---------------------Book Now---------------------*/
 #book {
-  background-color: #567d50;
-  position: relative;
+  background-image: url("../images/hikingTrail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #book h1 {
   position: relative;
+  margin-bottom: 30px;
 }
 
 form {
@@ -166,8 +174,22 @@ form {
 }
 
 input {
+  margin: 40px 0;
+  padding: 5px 10px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #e7e6d4;
+  border: 2px solid #567d50;
+  color: #77554c;
+  font-size: 20px;
+  font-weight: 600;
   -webkit-appearance: none;
   width: 750px;
+}
+
+input:nth-of-type(n+3) {
+  width: 350px;
+  font-size: 16px;
 }
 
 button {
@@ -178,13 +200,29 @@ button {
 
 /*---------------------Nature Facts---------------------*/
 #facts {
-
+  background-color: #567d50;
+  color: #e7e6d4;
 }
 
 
 /*---------------------Gallery---------------------*/
 #gallery {
+  height: 1100px;
+  color: #567d50;
+}
 
+#galleryPics {
+  width: 1100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#galleryPics img {
+  margin: 2px;
+  float: left;
+  width: 180px;
+  height: 120px;
 }
 
 /*---------------------Contact---------------------*/
