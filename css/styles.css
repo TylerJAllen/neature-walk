@@ -107,6 +107,7 @@ body {
   background: #e7e6d4;
   color: #77554c;
   width: 100%;
+  height: 1300px;
 }
 
 #aboutUs p {
@@ -165,6 +166,7 @@ body {
 #book h1 {
   position: relative;
   margin-bottom: 30px;
+  color: #e7e6d4;
 }
 
 form {
@@ -179,7 +181,7 @@ form {
 input {
   margin: 40px 0;
   padding: 5px 10px;
-  height: 30px;
+  height: 50px;
   border-radius: 10px;
   background-color: #e7e6d4;
   border: 2px solid #567d50;
@@ -199,12 +201,37 @@ button {
   -webkit-appearance: none;
   text-align: center;
   width: 450px;
+  height: 50px;
+  background-color: #e7e6d4;
+  border: 5px solid #567d50;
+  color: #77554c;
+  border-radius: 10px;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 /*---------------------Nature Facts---------------------*/
 #facts {
   background-color: #567d50;
   color: #e7e6d4;
+}
+
+#facts h1 {
+  position: relative;
+  margin-bottom: 30px;
+  color: #e7e6d4;
+}
+
+#facts ul {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  font-size: 26px;
+}
+
+#facts ul li {
+  margin: 20px 0;
 }
 
 
