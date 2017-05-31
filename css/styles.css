@@ -8,15 +8,13 @@
 
 body {
   background-color: #e7e6d4;
-  border: 3px solid green;
   position: relative;
 }
 
 #container {
   position: relative;
-  width: 93%;
-  margin: 20px auto 0;
-  border: 1px solid black;
+  width: 100%;
+  margin-top: 20px;
 }
 
 /*---------------------Nav-Bar---------------------*/
@@ -31,7 +29,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  border-bottom: 5px solid #567d50;
+  border-bottom: 8px solid #567d50;
   z-index: 10;
 }
 
@@ -67,7 +65,7 @@ body {
 
 /*---------------------Content Classes---------------------*/
 .section {
-  padding: 20px 5px;
+  padding: 20px 0;
   height: 1100px;
   max-width: 100%;
   position: relative;
@@ -97,6 +95,8 @@ body {
 #home img {
   width: 100%;
   max-width: 100%;
+  /*border: 8px solid #567d50;
+  border-radius: 20px;*/
 }
 
 /*---------------------About Us---------------------*/
@@ -108,14 +108,12 @@ body {
 }
 
 #aboutUs p {
-  border: 5px solid #567d50;
+  border: 8px solid #567d50;
   width: 60%;
-  /*left: 430px;*/
   float: right;
   padding: 20px;
   color: #e7e6d4;
   background-color: #77554c;
-  zoom: 2;
   border-radius: 20px;
 }
 
@@ -126,8 +124,6 @@ body {
 
 #profilePics {
   width: 35%;
-  /*width: 420px;
-  height: 1000px;*/
   float: left;
 }
 
@@ -137,23 +133,14 @@ body {
   margin: 0;
   padding: 0;
 }
-
-#profilePics li {
-}
-
-#profilePics li > img {
-  /*height: 400px;
-  width: 400px;*/
-  width: 35%;
-  border-radius: 20px;
-  border: 5px solid #567d50;
-}
-
-/*#aboutUs:after {
-  content: "";
+#profilePics span {
   display: block;
-  clear: both;
-}*/
+}
+#profilePics li > img {
+  width: 35%;
+  /*border-radius: 20px;
+  border: 8px solid #567d50;*/
+}
 
 /*---------------------Book Now---------------------*/
 #book {
@@ -183,7 +170,7 @@ input {
   height: 10%;
   border-radius: 10px;
   background-color: #e7e6d4;
-  border: 2px solid #567d50;
+  border: 3px solid #567d50;
   color: #77554c;
   font-size: 20px;
   font-weight: 600;
@@ -234,7 +221,6 @@ button {
   margin: 20px 0;
 }
 
-
 /*---------------------Gallery---------------------*/
 #gallery {
   height: 1100px;
@@ -243,9 +229,9 @@ button {
 
 #galleryPics {
   max-width: 100%;
+  margin: 0 auto;
   overflow: auto;
   text-align: center;
-  border: 2px solid blue;
 }
 
 #galleryPics img {
@@ -257,16 +243,16 @@ button {
 
 /*---------------------Contact---------------------*/
 #contact {
-
+  text-align: center;
 }
 
 /*---------------------Media Queries---------------------*/
 @media screen and (max-width: 600px) {
   body, .navBar {
-    min-width: 400px;
+    min-width: 425px;
   }
   #container {
-    margin-top: 10px;
+    /*margin: 10px 0 0 0;*/
   }
   #navLeft, #navRight {
     top: 10px;
@@ -286,14 +272,37 @@ button {
     height: 150px;
   }
   .section > h1:first-child {
-    margin: 30px 0;
+    margin: 20px 0;
     zoom: 1.3;
   }
   #home {
     height: 100%;
-    top: 55px;
+    top: 60px;
   }
-
+  #aboutUs {
+    height: 100%;
+  }
+  #aboutUs p {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  #profilePics {
+    width: 100%;
+    float: none;
+  }
+  #profilePics li {
+    margin: 20px 0;
+  }
+  #profilePics li > img {
+    width: 70%;
+    max-width: 70%;
+  }
+  #book {
+    height: 500px;
+    /*border-radius: 20px;
+    border: 8px solid #567d50;*/
+  }
   input, input:nth-of-type(n+3) {
     margin: 15px 0;
     font-size: 16px;
@@ -302,10 +311,19 @@ button {
     margin-top: 15px;
     font-size: 16px;
   }
+  #facts {
+    height: 500px;
+  }
+  #gallery {
+    height: 100%;
+  }
   #galleryPics img {
     margin: 2px;
     float: left;
     width: 120px;
     height: 80px;
+  }
+  #contact {
+    height: 100%;
   }
 }
