@@ -10,6 +10,10 @@ body {
   background-color: #e7e6d4;
 }
 
+#container {
+  width: 93%;
+  margin: 0 auto;
+}
 
 /*---------------------Nav-Bar---------------------*/
 .nav a {
@@ -40,7 +44,6 @@ body {
   list-style: none;
   margin: 0 20px;
   display: inline-block;
-  zoom: 1.5;
 }
 
 #navLeft {
@@ -83,9 +86,7 @@ body {
 
 /*---------------------Home---------------------*/
 #home {
-  width: 915px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 #homeWrapper {
@@ -99,7 +100,8 @@ body {
 }
 
 #homeWrapper img {
-  height: 920px;
+  /*height: 920px;*/
+  max-width: 100%;
 }
 
 /*---------------------About Us---------------------*/
@@ -257,5 +259,11 @@ button {
 
 /*---------------------Contact---------------------*/
 #contact {
+
+}
+
+/*---------------------Media Queries---------------------*/
+@media screen and (max-width: 600px) {
+
 
 }
